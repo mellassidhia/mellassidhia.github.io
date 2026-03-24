@@ -397,6 +397,13 @@
       </div>
     </section>
 
-    <footer>Designed &amp; built by Dhia Eddine Mellassi · 2026</footer>
+    <footer>
+      Designed &amp; built by Dhia Eddine Mellassi · &copy;
+      <span id="year"></span>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
