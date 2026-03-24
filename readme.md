@@ -56,7 +56,7 @@ Then open `index.html` in your browser.
 
 ## 🌍 Live Demo
 
-It will be added soon.
+👉 https://mellassidhia.github.io
 
 ---
 
