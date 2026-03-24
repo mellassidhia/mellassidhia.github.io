@@ -31,8 +31,6 @@ portfolio/
 │── index.html
 │── css/
 │   └── styles.css
-│── js/
-│   └── script.js
 │── assets/
 │   └── images/
 ```
@@ -44,13 +42,13 @@ portfolio/
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/mellassidhia/PersonalPortfolio.git
 ```
 
 Open the project:
 
 ```bash
-cd your-portfolio
+cd PersonalPortfolio
 ```
 
 Then open `index.html` in your browser.
@@ -59,7 +57,7 @@ Then open `index.html` in your browser.
 
 ## 🌍 Live Demo
 
-*(Add your deployed link here if available)*
+It will be added soon.
 
 ---
 
