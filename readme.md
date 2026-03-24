@@ -20,7 +20,6 @@ The portfolio is designed to:
 
 * HTML5
 * CSS3
-* JavaScript
 
 ---
 
@@ -31,8 +30,8 @@ portfolio/
 │── index.html
 │── css/
 │   └── styles.css
-│── assets/
-│   └── images/
+└── assets/
+   └── images/
 ```
 
 ---
