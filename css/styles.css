@@ -104,7 +104,15 @@
     .social-links{display:flex;justify-content:center;gap:1.5rem;margin-top:2rem;flex-wrap:wrap}
     .social-link{color:var(--muted);text-decoration:none;font-size:0.85rem;letter-spacing:1px;transition:color 0.2s;font-family:'Syne',sans-serif;border:1px solid rgba(136,146,176,0.3);padding:0.5rem 1rem;border-radius:4px}
     .social-link:hover{color:var(--accent);border-color:var(--accent)}
+    .social-mail{color:var(--accent);font-size:0.78rem;letter-spacing:1px;font-family:'Syne',sans-serif}
 
+    .social-link svg{
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-right: 6px;
+    }
 
     .avatar-box{
         width: 200px;
