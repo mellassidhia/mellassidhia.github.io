@@ -41,13 +41,13 @@ portfolio/
 Clone the repository:
 
 ```bash
-git clone https://github.com/mellassidhia/PersonalPortfolio.git
+git clone https://github.com/mellassidhia/mellassidhia.github.io.git
 ```
 
 Open the project:
 
 ```bash
-cd PersonalPortfolio
+cd mellassidhia.github.io
 ```
 
 Then open `index.html` in your browser.
