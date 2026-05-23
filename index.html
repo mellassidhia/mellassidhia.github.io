@@ -7,10 +7,10 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a192f'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='14' fill='%2364ffda'>DM</text></svg>"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23000'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='13' fill='%2300ff41'>DM</text></svg>"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;700;900&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -18,7 +18,13 @@
   <body>
     <!-- NAVIGATION -->
     <nav>
-      <div class="logo">DM</div>
+      <div
+        class="logo"
+        onclick="window.location.href = '#hero'"
+        style="cursor: pointer"
+      >
+        DM
+      </div>
       <ul class="nav-links">
         <li><a href="#about">about</a></li>
         <li><a href="#skills">skills</a></li>
@@ -27,367 +33,538 @@
         <li><a href="#projects">projects</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
+      <div class="nav-status">
+        <div class="status-dot"></div>
+        ONLINE
+      </div>
     </nav>
 
     <!-- HERO -->
     <section class="hero" id="hero">
-      <p class="hero-eyebrow">HELLO, WORLD —</p>
-      <h1>Dhia Eddine Mellassi</h1>
-      <h2>Cybersecurity Engineer</h2>
-      <p>
+      <div class="hero-terminal">
+        <span class="cmd">$ whoami</span>
+        <span class="out"
+          ><span class="highlight">dhia-eddine-mellassi</span></span
+        >
+        <span class="cmd">$ cat /etc/role</span>
+        <span class="out">CYBERSECURITY_ENGINEER :: RED_TEAM_OPS</span>
+        <span class="cmd">$ uname -a</span>
+        <span class="out"
+          >TEK-UP · Tunisia · <span class="highlight">Active</span></span
+        >
+      </div>
+      <h1>
+        <span class="glitch" data-text="Dhia Eddine">Dhia Eddine</span> Mellassi
+      </h1>
+      <div class="hero-role">Cybersecurity Engineer</div>
+      <p class="hero-desc">
         Passionate about breaking things ethically and building resilient
-        systems. Currently pursuing my Engineering degree, focused on red team
-        security and offensive security research.
+        systems. Currently pursuing an Engineering degree, focused on red team
+        operations, vulnerability research, and offensive security.
       </p>
-      <div>
-        <a class="btn btn-solid" href="#projects">View my work</a>
-        <a class="btn" href="#contact">Get in touch</a>
+      <div class="btn-group">
+        <a class="btn btn-solid" href="#projects">view_work</a>
+        <a class="btn" href="#contact">get_in_touch</a>
       </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
-      <h2 class="section-title"><span>01.</span> About me</h2>
+      <p class="section-title"><span class="num">01</span> About</p>
+      <h2 class="section-heading">ABOUT_ME</h2>
       <p class="section-sub">A little bit about who I am</p>
       <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Hi! I'm <strong>Dhia Eddine Mellassi</strong>, a cybersecurity
-            enthusiast currently pursuing my
-            <strong>Engineering Degree</strong>
-            in Computer Science, building on a solid foundation from my
-            Bachelor's degree.
-          </p>
-          <p>
-            My focus lies in <strong>red team operations</strong> —
-            vulnerability assessment, penetration testing, and offensive
-            security research. I enjoy thinking like an attacker to understand
-            systems at their deepest level and expose what others miss.
-          </p>
-          <p>
-            Beyond the technical side, I'm constantly sharpening my skills
-            through hands-on labs, CTF challenges, and certifications. When I'm
-            not hunting vulnerabilities, you'll find me researching new attack
-            vectors and reverse engineering techniques.
-          </p>
+        <div>
+          <div class="about-text">
+            <p>
+              Hi. I'm <strong>Dhia Eddine Mellassi</strong>, a cybersecurity
+              enthusiast currently pursuing my
+              <strong>Engineering Degree</strong>
+              in Computer Science, building on a solid foundation from my
+              Bachelor's degree.
+            </p>
+            <p>
+              My focus lies in <strong>red team operations</strong> —
+              vulnerability assessment, penetration testing, and offensive
+              security research. I enjoy thinking like an attacker to understand
+              systems at their deepest level and expose what others miss.
+            </p>
+            <p>
+              Beyond the technical side, I'm constantly sharpening my skills
+              through hands-on labs, CTF challenges, and certifications. When
+              I'm not hunting vulnerabilities, you'll find me researching new
+              attack vectors and reverse engineering techniques.
+            </p>
+          </div>
+          <div class="about-terminal" style="margin-top: 2rem">
+            <div class="at-line">
+              <span class="at-key">name:</span
+              ><span class="at-val">Dhia Eddine Mellassi</span>
+            </div>
+            <div class="at-line">
+              <span class="at-key">location:</span
+              ><span class="at-val">Tunisia</span>
+            </div>
+            <div class="at-line">
+              <span class="at-key">status:</span
+              ><span class="at-val green">AVAILABLE_FOR_OPS</span>
+            </div>
+            <div class="at-line">
+              <span class="at-key">focus:</span
+              ><span class="at-val">red_team / pentest / offensive_sec</span>
+            </div>
+            <div class="at-line">
+              <span class="at-key">clearance:</span
+              ><span class="at-val amber">STUDENT_ENGINEER</span>
+            </div>
+            <div class="at-line">
+              <span class="at-key">thm_rank:</span
+              ><span class="at-val green">TOP_8%</span>
+            </div>
+          </div>
         </div>
-        <div class="avatar-box">
-          <div class="avatar-blob"></div>
-          <div class="avatar-blob-border"></div>
-          <img src="assets/images/Dhia.png" alt="Dhia Eddine Mellassi" />
+        <div class="avatar-glitch-wrap">
+          <img
+            src="assets/images/Dhia.png"
+            alt="Dhia Eddine Mellassi"
+            class="avatar-img"
+          />
+          <img
+            src="assets/images/Dhia.png"
+            alt=""
+            class="avatar-img glitch-r"
+            aria-hidden="true"
+          />
+          <img
+            src="assets/images/Dhia.png"
+            alt=""
+            class="avatar-img glitch-b"
+            aria-hidden="true"
+          />
         </div>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills">
-      <h2 class="section-title"><span>02.</span> Skills</h2>
+      <p class="section-title"><span class="num">02</span> Skills</p>
+      <h2 class="section-heading">SKILL_SET</h2>
       <p class="section-sub">Technologies and tools I work with</p>
-      <div class="skills-grid">
-        <div class="skill-pill">Python</div>
-        <div class="skill-pill">Bash</div>
-        <div class="skill-pill">Git &amp; GitHub</div>
-        <div class="skill-pill">Linux</div>
-        <div class="skill-pill">Java</div>
-        <div class="skill-pill">HTML / CSS</div>
-        <div class="skill-pill">JavaScript</div>
-        <div class="skill-pill">React</div>
-        <div class="skill-pill">Node.js</div>
-        <div class="skill-pill">SQL</div>
-        <div class="skill-pill">Docker</div>
+      <div class="skills-categories">
+        <div>
+          <div class="skill-group-label">Languages</div>
+          <div class="skills-grid">
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">Bash</div>
+            <div class="skill-pill">Java</div>
+            <div class="skill-pill">SQL</div>
+            <div class="skill-pill">Solidity</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">HTML / CSS</div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label">Frameworks &amp; Runtimes</div>
+          <div class="skills-grid">
+            <div class="skill-pill">React</div>
+            <div class="skill-pill">Node.js</div>
+            <div class="skill-pill">Flask</div>
+          </div>
+        </div>
+        <div>
+          <div class="skill-group-label">Tools &amp; Platforms</div>
+          <div class="skills-grid">
+            <div class="skill-pill">Linux</div>
+            <div class="skill-pill">Git &amp; GitHub</div>
+            <div class="skill-pill">Docker</div>
+            <div class="skill-pill">IPFS</div>
+            <div class="skill-pill">MetaMask / Ethereum</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience">
-      <h2 class="section-title"><span>03.</span> Experience</h2>
-      <p class="section-sub">Where I've worked</p>
+      <p class="section-title"><span class="num">03</span> Experience</p>
+      <h2 class="section-heading">WORK_LOG</h2>
+      <p class="section-sub">Where I've deployed</p>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">FEB 2025 — JUN 2025</div>
-          <div class="timeline-role">Software Engineering Intern</div>
-          <div class="timeline-company">KM Solutions · Kairouan, Tunisia</div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Software Engineering Intern</div>
+              <div class="timeline-company">
+                KM Solutions · Kairouan, Tunisia
+              </div>
+            </div>
+            <div class="timeline-date">FEB 2025 — JUN 2025</div>
+          </div>
           <ul class="timeline-desc">
             <li>
-              Built a blockchain-based voting platform using <b>Solidity</b>,
-              <b>ReactJS</b>, and <b>IPFS</b>.
+              Designed a <b>blockchain-based voting platform</b> with a focus on
+              tamper-resistance and data integrity using <b>Solidity</b> and
+              <b>IPFS</b>.
             </li>
             <li>
-              Integrated <b>MetaMask</b> for secure Ethereum login and
-              transaction signing.
+              Implemented <b>cryptographic authentication</b> via MetaMask —
+              enforcing identity verification and secure transaction signing on
+              Ethereum.
             </li>
             <li>
-              Developed an AI-based <b>chatbot assistant</b> and sentiment
-              <b>prediction model</b> to guide and inform voters.
+              Hardened smart contract logic against common vulnerabilities
+              including reentrancy and integer overflow.
             </li>
-            <li>Wrote unit tests and contributed to code reviews</li>
+            <li>
+              Developed an AI sentiment analysis model to detect
+              <b>manipulative or suspicious voter input patterns</b>.
+            </li>
           </ul>
         </div>
-
         <div class="timeline-item">
-          <div class="timeline-date">AUG 2024 — SEP 2024</div>
-          <div class="timeline-role">Software Engineering Intern</div>
-          <div class="timeline-company">Proxym-IT · Sousse, Tunisia</div>
+          <div class="timeline-header">
+            <div>
+              <div class="timeline-role">Software Engineering Intern</div>
+              <div class="timeline-company">Proxym-IT · Sousse, Tunisia</div>
+            </div>
+            <div class="timeline-date">AUG 2024 — SEP 2024</div>
+          </div>
           <ul class="timeline-desc">
             <li>
-              Built BigBite, an online food ordering app using
-              <b>ReactJS</b> and <b>Node.js</b>
+              Built BigBite with attention to <b>secure payment flows</b> and
+              protection against common web vulnerabilities (XSS, CSRF).
             </li>
-            <li>Integrated real-time order tracking and secure payments.</li>
-            <li>Optimized database queries, reducing load time by 30%</li>
-            <li>Designed mobile-first responsive interfaces.</li>
-            <li>Wrote unit tests and contributed to code reviews</li>
+            <li>
+              Implemented <b>input validation and sanitization</b> across all
+              API endpoints to prevent injection attacks.
+            </li>
+            <li>
+              Optimized and audited database queries — reducing load time by 30%
+              while identifying potential <b>SQL injection vectors</b>.
+            </li>
+            <li>
+              Enforced <b>role-based access control</b> (RBAC) for admin,
+              restaurant, and customer user roles.
+            </li>
           </ul>
         </div>
-
-        <!-- Add more internships by copy-pasting the block above -->
       </div>
     </section>
 
     <!-- CERTIFICATIONS -->
     <section id="certifications">
-      <h2 class="section-title"><span>04.</span> Certifications</h2>
-      <p class="section-sub">Credentials and achievements</p>
+      <p class="section-title"><span class="num">04</span> Certifications</p>
+      <h2 class="section-heading">CREDENTIALS</h2>
+      <p class="section-sub">Verified credentials and achievements</p>
       <div class="cert-grid">
         <div class="cert-card">
-          <div class="cert-icon">🎩</div>
-          <div class="cert-name">
-            Red Hat Certified System Administrator (RHCSA)
+          <div class="cert-badge">
+            <div class="cert-badge-icon">RH</div>
+            <span class="cert-issuer-tag">Red Hat</span>
           </div>
-          <div class="cert-issuer">Red Hat</div>
-          <div class="cert-year">December 2025</div>
+          <div class="cert-name">
+            Red Hat Certified Engineer in Ansible (RHCE)
+          </div>
+          <div class="cert-year">May 2026</div>
           <a
             class="cert-link"
-            href="https://www.credly.com/badges/857a9a91-72d2-43cf-920a-726b989e8f26/public_url"
+            href="https://www.credly.com/badges/cf4e3883-1bc7-49ca-a4e0-0327210227cd/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
+
         <div class="cert-card">
-          <div class="cert-icon">🐍</div>
-          <div class="cert-name">Certified Associate in Python Programming (PCAP)</div>
-          <div class="cert-issuer">Python Institute</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">PY</div>
+            <span class="cert-issuer-tag">Python Institute</span>
+          </div>
+          <div class="cert-name">
+            Certified Associate in Python Programming (PCAP)
+          </div>
           <div class="cert-year">April 2026</div>
           <a
             class="cert-link"
             href="https://www.credly.com/badges/555970d9-131b-45bb-b929-bc13aa1cafaf/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
+
         <div class="cert-card">
-          <div class="cert-icon">🐍</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">RH</div>
+            <span class="cert-issuer-tag">Red Hat</span>
+          </div>
+          <div class="cert-name">
+            Red Hat Certified System Administrator (RHCSA)
+          </div>
+          <div class="cert-year">December 2025</div>
+          <a
+            class="cert-link"
+            href="https://www.credly.com/badges/857a9a91-72d2-43cf-920a-726b989e8f26/public_url"
+            target="_blank"
+            >View credential</a
+          >
+          <div class="cert-bar"></div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge">
+            <div class="cert-badge-icon">PY</div>
+            <span class="cert-issuer-tag">Cisco</span>
+          </div>
           <div class="cert-name">Python Essentials 1</div>
-          <div class="cert-issuer">Cisco Networking Academy</div>
           <div class="cert-year">December 2025</div>
           <a
             class="cert-link"
             href="https://www.credly.com/badges/51603041-0440-4b75-88f6-b9524458d1e2/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
 
         <div class="cert-card">
-          <div class="cert-icon">🐍</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">PY</div>
+            <span class="cert-issuer-tag">Cisco</span>
+          </div>
           <div class="cert-name">Python Essentials 2</div>
-          <div class="cert-issuer">Cisco Networking Academy</div>
           <div class="cert-year">March 2026</div>
           <a
             class="cert-link"
             href="https://www.credly.com/badges/9966ab07-dc00-4e22-80cb-817075d97add/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
 
         <div class="cert-card">
-          <div class="cert-icon">🛡️</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">MS</div>
+            <span class="cert-issuer-tag">Microsoft</span>
+          </div>
           <div class="cert-name">
             Security, Compliance, and Identity Fundamentals
           </div>
-          <div class="cert-issuer">MICROSOFT</div>
           <div class="cert-year">November 2024</div>
           <a
             class="cert-link"
             href="https://www.credly.com/badges/22f72e9f-e606-45e4-bddd-050639917a47/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
 
         <div class="cert-card">
-          <div class="cert-icon">🤖</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">MS</div>
+            <span class="cert-issuer-tag">Microsoft</span>
+          </div>
           <div class="cert-name">Azure AI Fundamentals</div>
-          <div class="cert-issuer">MICROSOFT</div>
           <div class="cert-year">May 2024</div>
           <a
             class="cert-link"
             href="https://www.credly.com/badges/9f31ba8f-21dc-431d-9f86-2ae38bbcedd4/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
 
         <div class="cert-card">
-          <div class="cert-icon">🗄️</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">MS</div>
+            <span class="cert-issuer-tag">Microsoft</span>
+          </div>
           <div class="cert-name">Azure Data Fundamentals</div>
-          <div class="cert-issuer">MICROSOFT</div>
           <div class="cert-year">April 2024</div>
           <a
             class="cert-link"
             href="https://www.credly.com/badges/78bb1c0f-4c9b-4a7f-a92f-00a1457e3f23/public_url"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
 
         <div class="cert-card">
-          <div class="cert-icon">📈</div>
+          <div class="cert-badge">
+            <div class="cert-badge-icon">GG</div>
+            <span class="cert-issuer-tag">Google</span>
+          </div>
           <div class="cert-name">Digital Marketing</div>
-          <div class="cert-issuer">GOOGLE</div>
           <div class="cert-year">April 2024</div>
           <a
             class="cert-link"
             href="https://skillshop.exceedlms.com/student/award/hYUuj4KgrxrVqWm9rWVrVc4Z"
             target="_blank"
-            >View credential ↗</a
+            >View credential</a
           >
+          <div class="cert-bar"></div>
         </div>
       </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2 class="section-title"><span>05.</span> Projects</h2>
+      <p class="section-title"><span class="num">05</span> Projects</p>
+      <h2 class="section-heading">PROJECT_INDEX</h2>
       <p class="section-sub">Things I've built</p>
       <div class="projects-grid">
         <div class="project-card">
           <div class="proj-header">
-            <span class="folder-icon">📁</span>
+            <div class="proj-id">PROJ_001</div>
             <div class="proj-links">
               <a
                 class="proj-link"
                 href="https://github.com/mellassidhia/CineApp"
                 target="_blank"
-                >GitHub ↗</a
+                >GitHub</a
               >
             </div>
           </div>
           <div class="proj-title">CineApp</div>
           <div class="proj-desc">
-            This JavaFX cinema management system provides powerful admin
-            controls, streamlined screening scheduling, and an interactive seat
-            reservation experience, ensuring efficient operations, smooth user
-            interaction, and reliable performance across the platform.
+            JavaFX cinema management system with admin controls, screening
+            scheduling, and interactive seat reservation. Efficient operations
+            with reliable performance across the platform.
           </div>
           <div class="proj-tags">
             <span class="proj-tag">Java</span>
-            <span class="proj-tag"> · XAMPP</span>
-            <span class="proj-tag"> · Maven</span>
+            <span class="proj-tag">XAMPP</span>
+            <span class="proj-tag">Maven</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="proj-header">
-            <span class="folder-icon">📁</span>
+            <div class="proj-id">PROJ_002</div>
             <div class="proj-links">
               <a
                 class="proj-link"
                 href="https://github.com/mellassidhia/CarthageChain"
                 target="_blank"
-                >GitHub ↗</a
+                >GitHub</a
               >
             </div>
           </div>
           <div class="proj-title">CarthageChain</div>
           <div class="proj-desc">
-            This decentralized voting platform leverages Ethereum smart
-            contracts, a dynamic React interface, a Gemini-powered assistant,
-            and AI-driven sentiment analysis using Flask to ensure transparency,
-            security, and intelligent decision-making processes.
+            Decentralized voting platform leveraging Ethereum smart contracts,
+            React interface, Gemini-powered assistant, and AI-driven sentiment
+            analysis via Flask for transparent, secure decision-making.
           </div>
           <div class="proj-tags">
             <span class="proj-tag">React</span>
-            <span class="proj-tag"> · Flask</span>
-            <span class="proj-tag"> · Ethers</span>
-            <span class="proj-tag"> · Solidity</span>
+            <span class="proj-tag">Flask</span>
+            <span class="proj-tag">Ethers</span>
+            <span class="proj-tag">Solidity</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="proj-header">
-            <span class="folder-icon">📁</span>
+            <div class="proj-id">PROJ_003</div>
             <div class="proj-links">
               <a
                 class="proj-link"
                 href="https://github.com/mellassidhia/HealthCareDapp"
                 target="_blank"
-                >GitHub ↗</a
+                >GitHub</a
               >
             </div>
           </div>
           <div class="proj-title">HealthCareDapp</div>
           <div class="proj-desc">
-            This decentralized healthcare application uses blockchain technology
-            to securely manage medical records, enabling authorized access,
-            role-based permissions, and wallet integration while ensuring
-            privacy, transparency, and trust in sensitive patient data handling.
+            Decentralized healthcare application using blockchain to securely
+            manage medical records with authorized access, role-based
+            permissions, and wallet integration ensuring patient data privacy.
           </div>
           <div class="proj-tags">
             <span class="proj-tag">React</span>
-            <span class="proj-tag"> · Ethers</span>
-            <span class="proj-tag"> · Solidity</span>
+            <span class="proj-tag">Ethers</span>
+            <span class="proj-tag">Solidity</span>
           </div>
         </div>
 
         <div class="project-card">
           <div class="proj-header">
-            <span class="folder-icon">📁</span>
+            <div class="proj-id">PROJ_004</div>
             <div class="proj-links">
               <a
                 class="proj-link"
                 href="https://github.com/mellassidhia/BigBite"
                 target="_blank"
-                >GitHub ↗</a
+                >GitHub</a
               >
             </div>
           </div>
           <div class="proj-title">BigBite</div>
           <div class="proj-desc">
-            BigBite is a modern full-stack web application for online food
-            ordering, built with ReactJS, delivering intuitive design, secure
-            transactions, real-time order tracking, and efficient state
-            management for seamless user experiences.
+            Full-stack food ordering platform built with ReactJS delivering
+            intuitive design, secure transactions, real-time order tracking, and
+            efficient state management for seamless UX.
           </div>
           <div class="proj-tags">
             <span class="proj-tag">React</span>
-            <span class="proj-tag"> · NodeJs</span>
-            <span class="proj-tag"> · MongoDB</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">MongoDB</span>
           </div>
         </div>
-
-        <!-- Add more projects by copy-pasting a project-card block above -->
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact">
-      <h2 class="section-title"><span>06.</span> Contact</h2>
+      <p class="section-title"><span class="num">06</span> Contact</p>
+      <h2 class="section-heading">ESTABLISH_CONNECTION</h2>
       <p class="section-sub">Let's connect</p>
-      <div class="contact-box">
-        <h3>Get in touch</h3>
-        <p>
-          Whether you have an opportunity, a question, or simply want to
-          connect, feel free to reach out. You can contact me at
-          <a class="social-mail" href="mailto:mallessidhia@gmail.com"
-            >mallessidhia@gmail.com</a
-          >, and I’ll do my best to respond as soon as possible.
-        </p>
-        <a class="btn btn-solid" href="mailto:mallessidhia@gmail.com"
-          >Say Hello ✉</a
-        >
-        <div class="social-links">
+      <div class="contact-terminal">
+        <div class="term-dots">
+          <div class="term-dot r"></div>
+          <div class="term-dot y"></div>
+          <div class="term-dot g"></div>
+        </div>
+        <div class="term-titlebar">bash — 80×24</div>
+        <div class="term-lines">
+          <div>
+            <span class="term-prompt">dhia@redteam:~$ </span
+            ><span class="term-cmd">cat contact.txt</span>
+          </div>
+          <div class="term-out">
+            Whether you have an opportunity, a question, or
+          </div>
+          <div class="term-out">
+            simply want to connect — reach out. I'll respond.
+          </div>
+          <div>&nbsp;</div>
+          <div>
+            <span class="term-prompt">dhia@redteam:~$ </span
+            ><span class="term-cmd">echo $MAIL</span>
+          </div>
+          <div class="term-out">
+            <a class="term-link" href="mailto:mallessidhia@gmail.com"
+              >mallessidhia@gmail.com</a
+            >
+          </div>
+          <div>&nbsp;</div>
+          <div>
+            <span class="term-prompt">dhia@redteam:~$ </span
+            ><span class="term-cmd"
+              >./send_message.sh<span class="term-cursor"></span
+            ></span>
+          </div>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-solid" href="mailto:mallessidhia@gmail.com"
+            >send_mail</a
+          >
           <a
             class="social-link"
             href="https://www.linkedin.com/in/dhia-eddine-mellassi/"
@@ -400,7 +577,6 @@
             </svg>
             LinkedIn
           </a>
-
           <a
             class="social-link"
             href="https://github.com/mellassidhia"
